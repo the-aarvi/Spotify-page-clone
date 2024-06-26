@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./assets/logo.png">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-section">
+                    <div class="nav-option" style="opacity: 1;">
+                        <i class="fa-solid fa-house"></i>
+                        <a href="#">Home</a>
+                    </div>
+                    <div class="nav-option">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <a href="#">Search</a>
+                    </div>
+                </div>
+            </div>
+            <div class="library">
+                <div class="options">
+                    <div class="lib-option nav-option">
+                        <img src="./assets/library_icon.png" alt="lib-icon">
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="lib-box">
+                    <div class="box">
+                        <div class="box-p1">Create your first playlist</div>
+                        <div class="box-p2">It's easy, we'll help you</div>
+                        <button class="badge">Create playlist</button>
+                    </div>
+                    <div class="box">
+                        <div class="box-p1">Let's find some podcasts to follow</div>
+                        <div class="box-p2">We'll keep you updated on new episodes</div>
+                        <button class="badge">Browse podcast</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="main-nav-bar">
+                    <div class="nav-icons">
+                        <img src="./assets/backward_icon.png" alt="back-icon" id="back-icon">
+                        <img src="./assets/forward_icon.png" alt="forward_icon" id="forward_icon" class="hide">
+                    </div>
+                    <div class="nav-badge">
+                        <button class="badge1 hide">Explore Premium</button>
+                        <button class="badge2"><i class="fa-regular fa-circle-down"></i>Install App</button>
+                        <i class="fa-regular fa-bell"></i>
+                        <p class="user">P</p>
+                    </div>
+                </div>
+                <div class="nav-badge-2">
+                    <button class="badge3">All</button>
+                    <button class="badge4">Music</button>
+                    <button class="badge4">Podcasts</button>
+                </div>
+            </div>
+            <div class="playlist-section">
+                <div class="playlist">
+                    <div class="heading">
+                        <h3>Recently played</h3>
+                    </div>
+                    <div class="card-section">
+                        <div class="cards">
+                            <div class="play">
+                                <img src="./assets/tera.jpeg" alt="">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <div class="subtitle"><h5>Tera Chehra</h5></div>
+                            <div class="text">Arijit Singh</div>
+                        </div>
+                        <div class="cards">
+                            <div class="play">
+                                <img src="./assets/Bollywood Mush.jpeg" alt="">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <div class="subtitle"><h5>Bollywood Mush</h5></div>
+                            <div class="text">Let these songs be the background score to...</div>
+                        </div>
+                    </div>    
+                </div>
+                <div class="playlist">
+                    <div class="heading">
+                        <h3>Featured Charts</h3>
+                        <a href="">Show all</a>
+                    </div>
+                    <div class="card-section">
+                        <div class="cards">
+                            <div class="play">
+                                <img src="./assets/top songs india.jpg" alt="">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <div class="subtitle"><h5>Top Songs - India</h5></div>
+                            <div class="text">Your weekly update of the most played trac...</div>
+                        </div>
+                        <div class="cards">
+                            <div class="play">
+                                <img src="./assets/top 50 india.jpg" alt="">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <div class="subtitle"><h5>Top 50 - India</h5></div>
+                            <div class="text">Your daily update of the most played trac...</div>
+                        </div>
+                        <div class="cards">
+                            <div class="play">
+                                <img src="./assets/top songs global.jpg" alt="">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <div class="subtitle"><h5>Top Songs - Global</h5></div>
+                            <div class="text">Your daily update of the most played trac...</div>
+                        </div>
+                        <div class="cards hide4">
+                            <div class="play">
+                                <img src="./assets/viral 50 india.jpg" alt="">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <div class="subtitle"><h5>Viral 50 - India</h5></div>
+                            <div class="text">Your daily update of the most viral tracks...</div>
+                        </div>
+                        <div class="cards hide5">
+                            <div class="play">
+                                <img src="./assets/top 50 global.jpg" alt="">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <div class="subtitle"><h5>Top 50 - Global</h5></div>
+                            <div class="text">Your daily update of the most played track...</div>
+                        </div>
+                        <div class="cards hide6">
+                            <div class="play">
+                                <img src="./assets/viral 50 global.jpg" alt="">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <div class="subtitle"><h5>Viral 50 - Global</h5></div>
+                            <div class="text">Your daily update of the most viral tracks...</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="playlist">
+                    <div class="heading">
+                        <h3>Try something else</h3>
+                        <a href="">Show all</a>
+                    </div>
+                    <div class="card-section">
+                        <div class="cards">
+                            <div class="play">
+                                <img src="./assets/Hot Hits Hindi.jpeg" alt="">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <div class="subtitle"><h5>Hot Hits Hindi</h5></div>
+                            <div class="text">Hottest Hindi music served here. Cover-...</div>
+                        </div>
+                        <div class="cards">
+                            <div class="play">
+                                <img src="./assets/Bollywood Mush.jpeg" alt="">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <div class="subtitle"><h5>Bollywood Mush</h5></div>
+                            <div class="text">Let these songs be the background score to...</div>
+                        </div>
+                        <div class="cards">
+                            <div class="play">
+                                <img src="./assets/Hot Hits Tamil.jpeg" alt="">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <div class="subtitle"><h5>Hot Hits Tamil</h5></div>
+                            <div class="text">Tune into the Hottest tracks of Kollywood!...</div>
+                        </div>
+                        <div class="cards hide4">
+                            <div class="play">
+                                <img src="./assets/All Out 00's Hindi.jpeg" alt="">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <div class="subtitle"><h5>All Out 00's Hindi</h5></div>
+                            <div class="text">Bollywood songs that ruled hearts in the Y2...</div>
+                        </div>
+                        <div class="cards hide5">
+                            <div class="play">
+                                <img src="./assets/Bollywood Central.jpeg" alt="">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <div class="subtitle"><h5>Bollywood Central</h5></div>
+                            <div class="text">Bollywood Central, jab baje toh seedha dil ke...</div>
+                        </div>
+                        <div class="cards hide6">
+                            <div class="play">
+                                <img src="./assets/90s Swagger.jpeg" alt="">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <div class="subtitle"><h5>90s Swagger</h5></div>
+                            <div class="text">Everything from cheesy floor-filters to big bea...</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="playlist">
+                    <div class="heading">
+                        <h3>Spotify original podcasts</h3>
+                        <a href="">Show all</a>
+                    </div>
+                    <div class="card-section">
+                        <div class="cards">
+                            <div class="play">
+                                <img src="./assets/The Joe Rogan... Joe Rogan.jpeg" alt="">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <div class="subtitle"><h5>The Joe Rogan...</h5></div>
+                            <div class="text">Joe Rogan</div>
+                        </div>
+                        <div class="cards">
+                            <div class="play">
+                                <img src="./assets/Pretkotha (Bengali... Gourab Tapadar.jpeg" alt="">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <div class="subtitle"><h5>Pretkotha (Bengali...</h5></div>
+                            <div class="text">Gourab Tapadar</div>
+                        </div>
+                        <div class="cards">
+                            <div class="play">
+                                <img src="./assets/Garikapati Gyananidhi... TeluguOne.jpeg" alt="">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <div class="subtitle"><h5>Garikapati...</h5></div>
+                            <div class="text">TeluguOne</div>
+                        </div>
+                        <div class="cards hide4">
+                            <div class="play">
+                                <img src="./assets/Shri Krishna Leela (Hin... Spotify Studios.jpeg" alt="">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <div class="subtitle"><h5>Shri Krishna Leela...</h5></div>
+                            <div class="text">Spotify Studios</div>
+                        </div>
+                        <div class="cards hide5">
+                            <div class="play">
+                                <img src="./assets/Gopi Sudhakar Ennenn... Spotify Studios.jpeg" alt="">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <div class="subtitle"><h5>Gopi Sudhakar...</h5></div>
+                            <div class="text">Spotify Studios</div>
+                        </div>
+                        <div class="cards hide6">
+                            <div class="play">
+                                <img src="./assets/Naallanaa Murukku-... Spotify Studios.jpeg" alt="">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <div class="subtitle"><h5>Naallanaa Murukku-...</h5></div>
+                            <div class="text">Spotify Studios</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="playlist">
+                    <div class="heading">
+                        <h3>Shows to try</h3>
+                        <a href="">Show all</a>
+                    </div>
+                    <div class="card-section">
+                        <div class="cards">
+                            <div class="play">
+                                <img src="./assets/Balazsek Balazsek.jpeg" alt="">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <div class="subtitle"><h5>Balazsek</h5></div>
+                            <div class="text">Balazsek</div>
+                        </div>
+                        <div class="cards">
+                            <div class="play">
+                                <img src="./assets/Leyendas Legendarias Sonoro SINCO.jpeg" alt="">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <div class="subtitle"><h5>Leyendas...</h5></div>
+                            <div class="text">Sonoro | SINCO</div>
+                        </div>
+                        <div class="cards">
+                            <div class="play">
+                                <img src="./assets/True Crime with... Mile Higher Media & Audioboom Studios.jpeg" alt="">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <div class="subtitle"><h5>True Crime with...</h5></div>
+                            <div class="text">Mile Higher Media & Audioboom Studios</div>
+                        </div>
+                        <div class="cards hide4">
+                            <div class="play">
+                                <img src="./assets/Nadie Saba Nada SER Podcast.jpeg" alt="">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <div class="subtitle"><h5>Nadie Saba Nada</h5></div>
+                            <div class="text">SER Podcast</div>
+                        </div>
+                        <div class="cards hide5">
+                            <div class="play">
+                                <img src="./assets/Shawn Ryan Show Shawn Ryan Cumulus Podcast Network.jpeg" alt="">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <div class="subtitle"><h5>Shawn Ryan Show</h5></div>
+                            <div class="text">Shawn Ryan | Cumulus Podcast Network</div>
+                        </div>
+                        <div class="cards hide6">
+                            <div class="play">
+                                <img src="./assets/Verbrechen ZEIT ONLINE.jpeg" alt="">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <div class="subtitle"><h5>Verbrechen</h5></div>
+                            <div class="text">ZEIT ONLINE</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="legbar">
+                    <div class="company">
+                        <div class="com-bold">Company</div>
+                        <div class="jobs">About</div>
+                        <div class="jobs">Jobs</div>
+                        <div class="jobs">For the Record</div>
+                    </div>
+                    <div class="company">
+                        <div class="com-bold">Communities</div>
+                        <div class="jobs">For Artists</div>
+                        <div class="jobs">Developers</div>
+                        <div class="jobs">Advertising</div>
+                        <div class="jobs">Investors</div>
+                        <div class="jobs">Vendors</div>
+                    </div>
+                    <div class="company">
+                        <div class="com-bold">Useful links</div>
+                        <div class="jobs">Support</div>
+                        <div class="jobs">Free Mobile App</div>
+                    </div>
+                    <div class="company">
+                        <div class="com-bold">Spotify Plans</div>
+                        <div class="jobs">Premium Individual</div>
+                        <div class="jobs">Premium Duo</div>
+                        <div class="jobs">Premium Family</div>
+                        <div class="jobs">Premium Student</div>
+                        <div class="jobs">Spotify Free</div>
+                    </div>
+                    <div class="company-social">
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                </div>
+                <div class="linebreak"><hr/></div>
+                <div class="legal">
+                    <div class="policy">
+                        <div>Legal</div>
+                        <div>Safety & Privacy Center</div>
+                        <div>Privacy Policy</div>
+                        <div>Cookies</div>
+                        <div>About Ads</div>
+                        <div>Accessibility</div>
+                    </div>
+                    <div class="copyright">
+                        <div>© 2024 Spotify AB</div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer"></div>
+            <div class="footer"></div>
+        </div>
+        <div class="music-player">
+            <div class="left-music">
+                <div class="tera">
+                    <img src="./assets/small tera.jpeg" alt="">
+                </div>
+                <div class="tera-text">
+                    <div class="tera-text1">Tera Chehra</div>
+                    <div class="tera-text2">Arijit Singh</div>
+                </div>
+                <div class="plus">
+                    <img src="./assets/add_circle.png" alt="">
+                </div>
+            </div>
+            <div class="center-music">
+                <div class="playback">
+                    <img src="./assets/player_icon1.png" alt="">
+                    <img src="./assets/player_icon2.png" alt="">
+                    <img src="./assets/player_icon3.png" alt="" id="playback-player">
+                    <img src="./assets/player_icon4.png" alt="">
+                    <img src="./assets/player_icon5.png" alt="">
+                </div>
+                <div class="playbar">
+                    <span class="curr-time">00:00</span>
+                    <input type="range" min="0" max="100" class="timer">
+                    <span class="tot-time">04:34</span>
+                </div>
+            </div>
+            <div class="right-music">
+                <img src="./assets/slideshow.png" alt="">
+                <img src="./assets/mic.png" alt="">
+                <img src="./assets/queue.png" alt="">
+                <img src="./assets/other dveice.png" alt="">
+                <img src="./assets/volume_up.png" alt="">
+                <input type="range" min="0" max="100" class="music-sound">
+                <img src="./assets/mini player.png" alt="">
+                <img src="./assets/full-screen.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
